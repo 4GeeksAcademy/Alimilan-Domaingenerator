@@ -21,8 +21,10 @@ window.onload = function() {
       for (let j = 0; j < adj.length; j++) {
         for (let k = 0; k < noun.length; k++) {
           for (let l = 0; l < ext.length; l++) {
-            domain += pronoun[i] + adj[j] + noun[k] + ext[l] + "<br>";
+            /* domain += pronoun[i] + adj[j] + noun[k] + ext[l] + "<br>"; */
+            domain += `<li class="list-group-item">${pronoun[i]}${adj[j]}${noun[k]}${ext[l]}</li>`;
       
+            
           }
         }
       }
